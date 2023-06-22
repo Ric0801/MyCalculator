@@ -1,0 +1,123 @@
+<div class="bg-gray-700 h-screen">
+  <div class="grid grid-cols-4 h-screen">
+    <input
+      id="output"
+      class="bg-slate-800 text-white text-right font-bold text-4xl pr-4 col-span-4 h-28 outline-1 outline-black mb-6 w-screen"
+      [value]="displayResult()"
+    />
+    <button
+      (click)="resetValue()"
+      class="bg-slate-800 border-gray-700 border-solid m-2 max-h-20 text-white border-2 rounded-l-full rounded-r-full text-xl"
+    >
+      CE
+    </button>
+    <button
+      (click)="toggleSign()"
+      class="bg-slate-800 border-gray-700 border-solid m-2 max-h-20 text-white border-2 rounded-l-full rounded-r-full text-xl"
+    >
+      +/-
+    </button>
+    <button
+      (click)="startOperation('%')"
+      class="bg-slate-800 border-gray-700 border-solid m-2 max-h-20 text-white border-2 rounded-l-full rounded-r-full text-xl"
+    >
+      %
+    </button>
+    <button
+      (click)="startOperation('÷')"
+      class="bg-orange-400 border-gray-700 border-solid m-2 max-h-20 text-white border-2 rounded-l-full rounded-r-full text-3xl"
+    >
+      ÷
+    </button>
+    <button
+      (click)="addValue(7)"
+      class="bg-slate-400 border-gray-700 border-solid m-2 max-h-20 text-white border-2 rounded-l-full rounded-r-full text-xl"
+    >
+      7
+    </button>
+    <button
+      (click)="addValue(8)"
+      class="bg-slate-400 border-gray-700 border-solid m-2 max-h-20 text-white border-2 rounded-l-full rounded-r-full text-xl"
+    >
+      8
+    </button>
+    <button
+      (click)="addValue(9)"
+      class="bg-slate-400 border-gray-700 border-solid m-2 max-h-20 text-white border-2 rounded-l-full rounded-r-full text-xl"
+    >
+      9
+    </button>
+    <button
+      (click)="startOperation('*')"
+      class="bg-orange-400 border-gray-700 border-solid m-2 max-h-20 text-white border-2 rounded-l-full rounded-r-full text-xl"
+    >
+      x
+    </button>
+    <button
+      (click)="addValue(4)"
+      class="bg-slate-400 border-gray-700 border-solid m-2 max-h-20 text-white border-2 rounded-l-full rounded-r-full text-xl"
+    >
+      4
+    </button>
+    <button
+      (click)="addValue(5)"
+      class="bg-slate-400 border-gray-700 border-solid m-2 max-h-20 text-white border-2 rounded-l-full rounded-r-full text-xl"
+    >
+      5
+    </button>
+    <button
+      (click)="addValue(6)"
+      class="bg-slate-400 border-gray-700 border-solid m-2 max-h-20 text-white border-2 rounded-l-full rounded-r-full text-xl"
+    >
+      6
+    </button>
+    <button
+      (click)="startOperation('-')"
+      class="bg-orange-400 border-gray-700 border-solid m-2 max-h-20 text-white border-2 rounded-l-full rounded-r-full text-xl"
+    >
+      -
+    </button>
+    <button
+      (click)="addValue(1)"
+      class="bg-slate-400 border-gray-700 border-solid m-2 max-h-20 text-white border-2 rounded-l-full rounded-r-full text-xl"
+    >
+      1
+    </button>
+    <button
+      (click)="addValue(2)"
+      class="bg-slate-400 border-gray-700 border-solid m-2 max-h-20 text-white border-2 rounded-l-full rounded-r-full text-xl"
+    >
+      2
+    </button>
+    <button
+      (click)="addValue(3)"
+      class="bg-slate-400 border-gray-700 border-solid m-2 max-h-20 text-white border-2 rounded-l-full rounded-r-full text-xl"
+    >
+      3
+    </button>
+    <button
+      (click)="startOperation('+')"
+      class="bg-orange-400 border-gray-700 border-solid m-2 max-h-20 text-white border-2 rounded-l-full rounded-r-full text-xl"
+    >
+      +
+    </button>
+    <button
+      (click)="addValue(0)"
+      class="bg-slate-400 border-gray-700 border-solid col-span-2 m-2 max-h-20 text-white border-2 rounded-l-full rounded-r-full text-xl"
+    >
+      0
+    </button>
+    <button
+      (click)="addComma()"
+      class="bg-slate-400 border-gray-700 border-solid m-2 max-h-20 text-white border-2 rounded-l-full rounded-r-full text-xl"
+    >
+      ,
+    </button>
+    <button
+      (click)="calcValue()"
+      class="bg-orange-400 border-gray-700 border-solid m-2 max-h-20 text-white border-2 rounded-l-full rounded-r-full text-xl"
+    >
+      =
+    </button>
+  </div>
+</div>
